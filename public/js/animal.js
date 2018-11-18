@@ -21,7 +21,7 @@ class Animal extends React.Component {
           </div>
           </div>
         </div>
-        <animalForm animal={this.props.animal}   handleSubmit={this.props.handleSubmit}/>
+        <AnimalForm animal={this.props.animal}   handleSubmit={this.props.handleSubmit}/>
       </div>
     )
   }

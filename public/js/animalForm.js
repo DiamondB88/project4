@@ -14,8 +14,8 @@ componentDidMount(){
     this.setState({
       title: this.props.animal.title,
       description: this.props.animal.description,
-      key_skill: this.props.animal.image,
-      id: this.props.person.id
+      image: this.props.animal.image,
+      id: this.props.animal.id
     })
   }
 }

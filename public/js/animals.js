@@ -20,7 +20,7 @@ class Animals extends React.Component {
   componentDidMount () {
   this.getAnimals()
 }
-deleteAnimals (animal, index) {
+deleteAnimal (animal, index) {
   fetch('animal/' + animal.id,
     {
       method: 'DELETE'
