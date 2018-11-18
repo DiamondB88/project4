@@ -79,7 +79,6 @@ handleUpdateSubmit (animal) {
         return updatedAnimal.json()
       })
       .then(jsonedAnimal => {
-        //need to update state be naughty, call that db!
         this.getAnimal()
         this.toggleState('AnimalListIsVisible', 'AnimalIsVisible')
       })
