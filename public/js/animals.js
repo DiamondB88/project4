@@ -39,14 +39,14 @@ deleteAnimal (animal, index) {
     .then(response => response.json())
     .then(data => {
       this.setState({
-        animal: data
+        animals: data
       })
       console.log(data);
     }).catch(error => console.log(error))
 }
 handleCreate (animal) {
     console.log([animal, ...this.state.animals])
-    this.setState({animals: [animal, ...this.state.animal]})
+    this.setState({animals: [animal, ...this.state.animals]})
   }
 handleCreateSubmit (animal) {
     fetch('/animal', {
@@ -79,7 +79,7 @@ handleUpdateSubmit (animal) {
         return updatedAnimal.json()
       })
       .then(jsonedAnimal => {
-        this.getAnimal()
+        this.getAnimals()
         this.toggleState('AnimalListIsVisible', 'AnimalIsVisible')
       })
       .catch(error => console.log(error))
