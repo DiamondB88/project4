@@ -3,25 +3,18 @@ class Animal extends React.Component {
     return (
       <div>
         <div>
-          <div>
-            <div>
-              <img src={this.props.animal.image} alt={this.props.animal.title} />
-            </div>
+          <div className="spacing">
+              <img src={this.props.animal.image} alt={this.props.animal.title} className="editPageImage"/>
+              <div className="editPageH3Div">
+                <h3 className='editPageH3'><span>Title:</span> {this.props.animal.title} </h3>
+                <p className='editPageH3'><span>Description:</span> {this.props.animal.description} </p>
+              </div>
           </div>
-          <div className='animalForm'></div>
           <div className='animalForm'>
-            <div>
-              <h3 className='animalForm'><span>Title:</span> {this.props.animal.title} </h3>
-              <p className='animalForm'><span>Description:</span> {this.props.animal.description} </p>
-            </div>
-            <div className='animalForm'>
-            </div>
-          <div className='animalForm'>
-            <button className='animalForm' onClick={()=> this.props.toggleState('animalListIsVisible', 'animalIsVisible')}>See Full List</button>
-          </div>
+            <button className='seeFullList' onClick={()=> this.props.toggleState('animalListIsVisible', 'animalIsVisible')}>See Full List</button>
           </div>
         </div>
-        <AnimalForm animal={this.props.animal}   handleSubmit={this.props.handleSubmit}/>
+        <AnimalForm animal={this.props.animal} handleSubmit={this.props.handleSubmit} />
       </div>
     )
   }
