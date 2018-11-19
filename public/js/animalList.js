@@ -9,14 +9,13 @@ class AnimalList extends React.Component {
             <td onClick={()=> { this.props.getAnimal(animal); this.props.toggleState('animalListIsVisible', 'animalIsVisible')}}>
                 <img src={animal.image} alt={animal.title} />
               </td>
-              <td className='animal' onClick={()=> { this.props.getAnimal(animal); this.props.toggleState('animalListIsVisible', 'animalIsVisible')}}>
-                <h3> {animal.title} </h3>
+              <td className='animalList' onClick={()=> { this.props.getAnimal(animal); this.props.toggleState('animalListIsVisible', 'animalIsVisible')}}>
               </td>
               <td>
                   <button className='' onClick={()=> { this.props.getAnimal(animal); this.props.toggleState('animalListIsVisible', 'animalIsVisible')}}>Edit</button>
               </td>
               <td>
-                  <button className='' onClick={() => this.props.deleteAnimal(animal,index)}>Delete</button>
+                  <button className='animalList' onClick={() => this.props.deleteAnimal(animal,index)}>Delete</button>
               </td>
             </tr>
           )

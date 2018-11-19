@@ -61,10 +61,10 @@ return (
         />
       </div>
       <div className='control'>
-        <input className='' type='submit' />
+        <input className='submit' type='submit' />
       </div>
     </form>
-      <button className="" onClick={()=> this.props.toggleState('animalListIsVisible', 'addAnimalIsVisible')}>Cancel</button>
+      <button className='cancel' onClick={()=> this.props.toggleState('animalListIsVisible', 'addAnimalIsVisible')}>Cancel</button>
   </div>
     )
   }

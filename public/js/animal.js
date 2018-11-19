@@ -8,16 +8,16 @@ class Animal extends React.Component {
               <img src={this.props.animal.image} alt={this.props.animal.title} />
             </div>
           </div>
-          <div className=''></div>
-          <div className=''>
+          <div className='animalForm'></div>
+          <div className='animalForm'>
             <div>
-              <h3 className=''><span>Title:</span> {this.props.animal.title} </h3>
-              <p className=''><span>Description:</span> {this.props.animal.description} </p>
+              <h3 className='animalForm'><span>Title:</span> {this.props.animal.title} </h3>
+              <p className='animalForm'><span>Description:</span> {this.props.animal.description} </p>
             </div>
-            <div className=''>
+            <div className='animalForm'>
             </div>
-          <div className=''>
-            <button className='' onClick={()=> this.props.toggleState('animalListIsVisible', 'animalIsVisible')}>See Full List</button>
+          <div className='animalForm'>
+            <button className='animalForm' onClick={()=> this.props.toggleState('animalListIsVisible', 'animalIsVisible')}>See Full List</button>
           </div>
           </div>
         </div>
