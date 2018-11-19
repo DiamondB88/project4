@@ -265,3 +265,13 @@ input:hover{
   border-radius: 2px;
   margin-bottom: 10px;
 }
+
+.links p, a {
+  color: white;
+  text-decoration: none;
+}
+
+.links p, a:hover {
+  pointer: cursor;
+  color: #33cccc;
+}
