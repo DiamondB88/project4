@@ -13,7 +13,7 @@ class AnimalList extends React.Component {
                 <h3> {animal.title} </h3>
               </td>
               <td>
-                  <button className=''>Edit</button>
+                  <button className='' onClick={()=> { this.props.getAnimal(animal); this.props.toggleState('animalListIsVisible', 'animalIsVisible')}}>Edit</button>
               </td>
               <td>
                   <button className='' onClick={() => this.props.deleteAnimal(animal,index)}>Delete</button>
