@@ -46,7 +46,7 @@ deleteAnimal (animal, index) {
 }
 handleCreate (animal) {
     console.log([animal, ...this.state.animals])
-    this.setState({animals: [animal, ...this.state.animal]})
+    this.setState({animals: [animal, ...this.state.animals]})
   }
 handleCreateSubmit (animal) {
     fetch('/animal', {
