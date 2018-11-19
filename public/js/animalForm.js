@@ -64,13 +64,9 @@ return (
         <input className='submit' type='submit' />
       </div>
     </form>
-<<<<<<< HEAD
     {!this.state.id ?
     <button className="" onClick={()=> this.props.toggleState('animalListIsVisible', 'addAnimalIsVisible')}>Cancel</button>: ''}
 
-=======
-      <button className='cancel' onClick={()=> this.props.toggleState('animalListIsVisible', 'addAnimalIsVisible')}>Cancel</button>
->>>>>>> 4790ce0e92786e8232043b8d8a870c9e7955a239
   </div>
     )
   }
