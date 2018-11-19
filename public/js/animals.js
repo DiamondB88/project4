@@ -100,11 +100,11 @@ getAnimal(animal){
 
    return (
      <div className=''>
-       <h2> Crazy Animals </h2>
+       <h2>Memes to get you laughing out loud or aw-ing in cuteness</h2>
         {
           this.state.animalListIsVisible
           ? <button
-              className='' onClick={()=>this.toggleState('addAnimalIsVisible', 'animalListIsVisible')}>
+              className='animalList' onClick={()=>this.toggleState('addAnimalIsVisible', 'animalListIsVisible')}>
               Add a Meme
             </button>
           : ''
