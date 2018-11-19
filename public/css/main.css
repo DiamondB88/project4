@@ -2,7 +2,7 @@ html {
   background-image: linear-gradient(#33cccc, #006699);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100%;
+  min-height: 100%;
 }
 
 h1 {
@@ -10,7 +10,7 @@ h1 {
   text-align: center;
   color: white;
   padding: 4px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Syncopate', sans-serif;
 }
 
 h2 {
@@ -34,7 +34,7 @@ p {
   font-family: 'Quicksand', sans-serif;
 }
 
-button {
+.addAMeme {
   color: white;
   font-family: 'Quicksand', sans-serif;
   font-size: 25px;
@@ -42,6 +42,42 @@ button {
   height: auto;
   background-color: #006699;
   border-radius: 2px;
+  cursor: pointer;
+}
+
+.addAMeme:hover {
+  color: #006699;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 25px;
+  width: 100%;
+  height: auto;
+  background-color: white;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.animalListButton {
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 25px;
+  width: 15vw;
+  height: 10vw;
+  background-color: #006699;
+  border-radius: 100%;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.animalListButton:hover {
+  color: #006699;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 25px;
+  width: 15vw;
+  height: 10vw;
+  background-color: white;
+  border-radius: 100%;
+  padding: 20px;
+  cursor: pointer;
 }
 
 label {
@@ -62,7 +98,7 @@ input {
   margin-bottom: 10px;
 }
 
-button .cancel {
+.cancelButton {
   color: white;
   font-family: 'Quicksand', sans-serif;
   font-size: 25px;
@@ -71,9 +107,161 @@ button .cancel {
   background-color: #006699;
   border-radius: 2px;
   margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.cancelButton:hover {
+  color: #006699;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 25px;
+  width: 75%;
+  height: auto;
+  background-color: white;
+  border-radius: 2px;
+  margin-bottom: 10px;
+  cursor: pointer;
 }
 
 img {
+  width: 40vw;
+  height: auto;
+  margin-left: 0 auto;
+  border: 5px solid white;
+  border-radius: 2px;
+}
+
+.editPageImage {
+  width: 50vw;
+  height: 40vw;
+}
+
+.editPageH3 {
+  font-size: 24px;
+  text-align: center;
+  color: #006699;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.editPageH3Div {
+  width: 24%;
+  height: auto;
+  border: 2px solid white;
+}
+
+.spacing {
+  display: flex;
+  justify-content: space-around;
+}
+
+.centerForm {
+  margin-left: 20vw;
+}
+
+.seeFullList {
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 25px;
+  width: 60%;
+  height: auto;
+  background-color: #006699;
+  border-radius: 2px;
+  margin-bottom: 10px;
+  margin-left: 20vw;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.seeFullList:hover {
+  color: #006699;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 25px;
+  width: 60%;
+  height: auto;
+  background-color: white;
+  border-radius: 2px;
+  margin-bottom: 10px;
+  margin-left: 20vw;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+main {
+  position: relative;
+  display: flex;
+  margin-left: 22vw;
+}
+
+h1 { margin: 0; }
+.n, .i, .m1, .e1, .m2, .e2, .s {
+  animation-timing-function: cubic-bezier(0.15,-0.01, 0.58, 1);
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  will-change: transform;
+}
+
+/* .marker {
+  position: absolute; top: 4rem; left: -3rem;
+  height: 3rem; width: 40rem;
+  background-color: black;
+  animation-name: marker;
+} */
+
+.n { margin-left: 1rem;   animation-name: n; }
+.i { margin-left: 3rem; animation-name: i; }
+.m1 { margin-left: 4rem; animation-name: m1; }
+.e1 { margin-left: 4rem; animation-name: e1; }
+.m2 { margin: 0 5rem 0 5rem; animation-name: m2; }
+.e2 { margin: 0 5rem 0 5rem; animation-name: e2; }
+.s { margin: 0 5rem 0 5rem; animation-name: s; }
+
+@keyframes n {
+  0%, 10% { transform: translateX(0); }
+  30%, 50% { transform: translateX(10rem); }
+}
+@keyframes i {
+  0%, 10% { transform: translateX(0); }
+  30%, 50% { transform: translateX(10rem); }
+}
+@keyframes m1 {
+  0%, 10% { transform: translateX(0); }
+  30%, 50% { transform: translateX(10rem); }
+}
+@keyframes e1 {
+  0%, 10% { transform: translateX(0); }
+  20%, 30% { transform: translateX(10rem); }
+}
+@keyframes m2 {
+  0%, 10% { transform: translateX(0); }
+  20%, 30% { transform: translateX(10rem); }
+}
+
+@keyframes e2 {
+  0%, 10% { transform: translateX(0); }
+  20%, 30% { transform: translateX(10rem); }
+}
+
+@keyframes s {
+  0%, 10% { transform: translateX(0); }
+  20%, 30% { transform: translateX(10rem); }
+}
+
+/* @keyframes marker {
+  0%, 10% { transform: translateX(0); }
+  30%, 50% { transform: translateX(337rem); }
+} */
+
+.mainPage {
+  display: flex;
+  justify-content: space-around;
+}
+
+input:hover{
+  color: #006699;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 25px;
   width: 75%;
   height: auto;
+  background-color: white;
+  border-radius: 2px;
+  margin-bottom: 10px;
 }

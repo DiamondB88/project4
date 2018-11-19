@@ -29,7 +29,7 @@ this.setState({[event.target.id]: event.target.value})
 }
 render () {
 return (
-  <div className=''>
+  <div className='centerForm'>
     <form onSubmit={this.handleSubmit}>
       <label className='label' for='title'>Title</label>
       <div className='control'>
@@ -65,7 +65,7 @@ return (
       </div>
     </form>
     {!this.state.id ?
-    <button className="" onClick={()=> this.props.toggleState('animalListIsVisible', 'addAnimalIsVisible')}>Cancel</button>: ''}
+    <button className='cancelButton' onClick={()=> this.props.toggleState('animalListIsVisible', 'addAnimalIsVisible')}>Cancel</button>: ''}
 
   </div>
     )
