@@ -6,7 +6,29 @@ html {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 40px;
+  text-align: center;
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+}
+
+h2 {
+  font-size: 24px;
+  text-align: center;
+  color: #006699;
+  font-family: 'Quicksand', sans-serif;
+}
+
+h3 {
+  font-size: 18px;
+  text-align: center;
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+}
+
+p {
+  font-size: 18px;
+  text-align: center;
   color: white;
   font-family: 'Quicksand', sans-serif;
 }
@@ -19,4 +41,38 @@ button {
   height: auto;
   background-color: #006699;
   border-radius: 2px;
+}
+
+label {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+}
+
+input {
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 25px;
+  width: 75%;
+  height: auto;
+  background-color: #006699;
+  border-radius: 2px;
+  margin-bottom: 10px;
+}
+
+button .cancel {
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 25px;
+  width: 75%;
+  height: auto;
+  background-color: #006699;
+  border-radius: 2px;
+  margin-bottom: 10px;
+}
+
+img {
+  width: 75%;
+  height: auto;
 }

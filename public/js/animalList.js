@@ -10,7 +10,6 @@ class AnimalList extends React.Component {
                 <img src={animal.image} alt={animal.title} />
               </td>
               <td className='animalList' onClick={()=> { this.props.getAnimal(animal); this.props.toggleState('animalListIsVisible', 'animalIsVisible')}}>
-                <h3> {animal.title} </h3>
               </td>
               <td>
                   <button className='animalList'>Edit</button>
